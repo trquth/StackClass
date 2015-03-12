@@ -10,7 +10,6 @@ namespace StackClass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("a");
         }
     }
 }
