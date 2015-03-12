@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace StackClass
 {
-    class Program
+    class MyStack
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("a");
-        }
     }
 }
