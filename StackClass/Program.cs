@@ -10,10 +10,10 @@ namespace StackClass
     {
         static void Main(string[] args)
         {
-            int capacity;
+            int capaticy;
             Console.WriteLine("Enter capacity of Stack");
-            capacity = int.Parse(Console.ReadLine());
-            MyStack<string> stack = new MyStack<string>(capacity);
+            capaticy = int.Parse(Console.ReadLine());
+            MyStack<string> stack = new MyStack<string>(capaticy);
             //chon chon chu nang 
             Console.WriteLine("1.Push");
 
