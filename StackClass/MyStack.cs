@@ -37,5 +37,21 @@ namespace StackClass
             }
             return 0;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public T Pop()
+        {
+            T removedElement;
+            T temp = default(T);
+            if (!(top<=0))
+            {
+                removedElement = stack[top];
+                top = top - 1;
+                return removedElement;
+            }
+            return temp;
+        }
     }
 }
