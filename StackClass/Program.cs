@@ -66,7 +66,7 @@ namespace StackClass
                         string result = stack.Peep(position);
                         if (result != null)
                         {
-                            Console.WriteLine("Element at position" + position + "is" + result);
+                            Console.WriteLine("Element at position " + position + "is " + result);
                             goto choiseMethod;
                         }
                         else
