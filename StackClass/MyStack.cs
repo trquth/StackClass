@@ -15,14 +15,13 @@ namespace StackClass
         {
             capacity = maxElement;
             stack = new T[capacity];
-            //khoi tao gia tri cho top -1
+            //Initialize the initial value by 1
             top = -1;
         }
         /// <summary>
-        /// Ham them gia tri vao Stack
+        ///  Add new value to the STACK
         /// </summary>
-        /// <param name="element">gia tri bat ki phu thuoc vao T</param>
-        /// <returns>tra ve -1 neu Stack da day va 0 khi da them tat ca phan tu vao Stack</returns>
+        /// <param name="element"></param>
         public void Push(T element)
         {
             //kiem tra xem mang co bi tran k
@@ -38,9 +37,9 @@ namespace StackClass
             return ;
         }
         /// <summary>
-        /// Tra ve mot phan tu o dau  va giam top xuong 1
+        /// Returns the element at the top and top-down processing decreased 1
         /// </summary>
-        /// <returns>tra ve gia tri dau neu Stack khong rong, tra ve gia tri mac dinh phu thuoc vao T neu Stack rong    </returns>
+        /// <returns>Returns the first value of the stack if not empty, otherwise it returns the default value depends on the parameter T</returns>
         public T Pop()
         {
             T removeElement;
@@ -54,11 +53,11 @@ namespace StackClass
             return temp;
         }
         /// <summary>
-        /// Tra ve mot phan tu o vi tri bat ki
+        /// Returns the value at any position in the STACK
         /// </summary>
-        /// <param name="position">gia tri kieu int</param>
-        /// <returns>Neu Stack rong tra ve gia tri mac dinh, nguoc lai tra ve mot gia tri thuoc Stack o vi tri do nguoi dung chi dinh</returns>
-        public T Peep(int position)
+        /// <param name="position">Value of type int</param>
+        /// <returns>Returns the value at the location where the user needs, returns the default value depends on the T</returns>
+        public T Peek(int position)
         {
             T temp = default(T);
             if (position< capacity&& position>=0)
